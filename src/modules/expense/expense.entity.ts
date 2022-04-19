@@ -20,6 +20,6 @@ export class Expense {
   @Column({ type: 'date' })
   fecha: Date;
 
-  @Column()
+  @Column({ type: 'numeric', precision: 10, scale: 2 })
   valor: number;
 }
