@@ -33,7 +33,8 @@ export class ExpenseController {
     return this.expenseservice.getExpenseById(id);
   }
   @ApiOkResponse({
-    description: 'The Resource list expense by User has ben succesfully return.',
+    description:
+      'The Resource list expense by User has ben succesfully return.',
   })
   @Get('/user/:idUser')
   getExpenseQuery(@Param('idUser') idUser: string): Promise<Expense[]> {
